@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Maths.xcodeproj">
+      location = "self:/Users/Death/Desktop/Code/Projects/Maths/MathLib.xcodeproj">
    </FileRef>
 </Workspace>

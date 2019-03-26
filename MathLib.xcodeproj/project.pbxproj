@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AE7B71722459BEA00A4EE6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B71622459BEA00A4EE6B /* main.m */; };
+		7AE7B71722459BEA00A4EE6B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B71622459BEA00A4EE6B /* main.mm */; };
+		7AE7B71E22459C0900A4EE6B /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B71D22459C0900A4EE6B /* Vector2.cpp */; };
+		7AE7B72722459DD300A4EE6B /* MathsTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B72622459DD300A4EE6B /* MathsTests.mm */; };
+		7AE7B7302245A0AA00A4EE6B /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B71D22459C0900A4EE6B /* Vector2.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AE7B72C22459FF500A4EE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE7B70B22459BEA00A4EE6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE7B71222459BEA00A4EE6B;
+			remoteInfo = Maths;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7AE7B71122459BEA00A4EE6B /* CopyFiles */ = {
@@ -23,12 +36,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7AE7B71322459BEA00A4EE6B /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AE7B71622459BEA00A4EE6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AE7B71322459BEA00A4EE6B /* MathLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MathLib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE7B71622459BEA00A4EE6B /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		7AE7B71D22459C0900A4EE6B /* Vector2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		7AE7B71F22459C2D00A4EE6B /* Vector2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Vector2.h; sourceTree = "<group>"; };
+		7AE7B72422459DD300A4EE6B /* MathLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE7B72622459DD300A4EE6B /* MathsTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MathsTests.mm; sourceTree = "<group>"; };
+		7AE7B72822459DD300A4EE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7AE7B71022459BEA00A4EE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE7B72122459DD300A4EE6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				7AE7B71522459BEA00A4EE6B /* Maths */,
+				7AE7B72522459DD300A4EE6B /* MathsTests */,
 				7AE7B71422459BEA00A4EE6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +75,8 @@
 		7AE7B71422459BEA00A4EE6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7B71322459BEA00A4EE6B /* Maths */,
+				7AE7B71322459BEA00A4EE6B /* MathLib */,
+				7AE7B72422459DD300A4EE6B /* MathLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,17 +84,28 @@
 		7AE7B71522459BEA00A4EE6B /* Maths */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7B71622459BEA00A4EE6B /* main.m */,
+				7AE7B71F22459C2D00A4EE6B /* Vector2.h */,
+				7AE7B71D22459C0900A4EE6B /* Vector2.cpp */,
+				7AE7B71622459BEA00A4EE6B /* main.mm */,
 			);
 			path = Maths;
+			sourceTree = "<group>";
+		};
+		7AE7B72522459DD300A4EE6B /* MathsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B72622459DD300A4EE6B /* MathsTests.mm */,
+				7AE7B72822459DD300A4EE6B /* Info.plist */,
+			);
+			path = MathsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7AE7B71222459BEA00A4EE6B /* Maths */ = {
+		7AE7B71222459BEA00A4EE6B /* MathLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AE7B71A22459BEA00A4EE6B /* Build configuration list for PBXNativeTarget "Maths" */;
+			buildConfigurationList = 7AE7B71A22459BEA00A4EE6B /* Build configuration list for PBXNativeTarget "MathLib" */;
 			buildPhases = (
 				7AE7B70F22459BEA00A4EE6B /* Sources */,
 				7AE7B71022459BEA00A4EE6B /* Frameworks */,
@@ -77,10 +115,28 @@
 			);
 			dependencies = (
 			);
-			name = Maths;
+			name = MathLib;
 			productName = Maths;
-			productReference = 7AE7B71322459BEA00A4EE6B /* Maths */;
+			productReference = 7AE7B71322459BEA00A4EE6B /* MathLib */;
 			productType = "com.apple.product-type.tool";
+		};
+		7AE7B72322459DD300A4EE6B /* MathLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE7B72922459DD300A4EE6B /* Build configuration list for PBXNativeTarget "MathLibTests" */;
+			buildPhases = (
+				7AE7B72022459DD300A4EE6B /* Sources */,
+				7AE7B72122459DD300A4EE6B /* Frameworks */,
+				7AE7B72222459DD300A4EE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE7B72D22459FF500A4EE6B /* PBXTargetDependency */,
+			);
+			name = MathLibTests;
+			productName = MathsTests;
+			productReference = 7AE7B72422459DD300A4EE6B /* MathLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,9 +150,12 @@
 					7AE7B71222459BEA00A4EE6B = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					7AE7B72322459DD300A4EE6B = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
-			buildConfigurationList = 7AE7B70E22459BEA00A4EE6B /* Build configuration list for PBXProject "Maths" */;
+			buildConfigurationList = 7AE7B70E22459BEA00A4EE6B /* Build configuration list for PBXProject "MathLib" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,21 +167,50 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7AE7B71222459BEA00A4EE6B /* Maths */,
+				7AE7B71222459BEA00A4EE6B /* MathLib */,
+				7AE7B72322459DD300A4EE6B /* MathLibTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AE7B72222459DD300A4EE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AE7B70F22459BEA00A4EE6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE7B71722459BEA00A4EE6B /* main.m in Sources */,
+				7AE7B71722459BEA00A4EE6B /* main.mm in Sources */,
+				7AE7B71E22459C0900A4EE6B /* Vector2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE7B72022459DD300A4EE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE7B72722459DD300A4EE6B /* MathsTests.mm in Sources */,
+				7AE7B7302245A0AA00A4EE6B /* Vector2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AE7B72D22459FF500A4EE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AE7B71222459BEA00A4EE6B /* MathLib */;
+			targetProxy = 7AE7B72C22459FF500A4EE6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7AE7B71822459BEA00A4EE6B /* Debug */ = {
@@ -254,10 +342,44 @@
 			};
 			name = Release;
 		};
+		7AE7B72A22459DD300A4EE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 694F87T4JZ;
+				INFOPLIST_FILE = MathsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmessiah.com.MathsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7AE7B72B22459DD300A4EE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 694F87T4JZ;
+				INFOPLIST_FILE = MathsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmessiah.com.MathsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AE7B70E22459BEA00A4EE6B /* Build configuration list for PBXProject "Maths" */ = {
+		7AE7B70E22459BEA00A4EE6B /* Build configuration list for PBXProject "MathLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7AE7B71822459BEA00A4EE6B /* Debug */,
@@ -266,11 +388,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AE7B71A22459BEA00A4EE6B /* Build configuration list for PBXNativeTarget "Maths" */ = {
+		7AE7B71A22459BEA00A4EE6B /* Build configuration list for PBXNativeTarget "MathLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7AE7B71B22459BEA00A4EE6B /* Debug */,
 				7AE7B71C22459BEA00A4EE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE7B72922459DD300A4EE6B /* Build configuration list for PBXNativeTarget "MathLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE7B72A22459DD300A4EE6B /* Debug */,
+				7AE7B72B22459DD300A4EE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
